@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const obj = {
+      name: "iniya",
+      age: 40,
+      skills: ["HTML", "CSS", "JS"],
+      Details: function () {
+        console.log(this.skill);
+      },
+      language: {
+        Tamil: "read-write",
+        English: "read-write",
+      },
+    };
+    console.log(obj);
+    obj.age = 60;
+    console.log(obj);
+    delete obj.age;
+    obj.skills.push("node");
+    console.log(obj.skills[0]);
+    console.log(obj);
+  </script>
+</html>
